@@ -22,8 +22,8 @@
          */
 
         var dataObj = {
-            turtlesData: turtlesData,
-            quizQuestions: quizQuestions,
+            playersData: playersData,
+            triviaQuestions: triviaQuestions,
             correctAnswers: correctAnswers
         };
 
@@ -62,65 +62,65 @@
      *
      */
 
-    var correctAnswers = [1, 2, 3, 0, 2, 0, 3, 2, 0, 3];
+    var correctAnswers = [3, 1, 2, 0, 2, 0, 3, 2, 0, 3];
 
-    var quizQuestions  = [
-        {
+    var triviaQuestions  = [
+         {
             type: "text",
-            text: "How much can a loggerhead weigh?",
+            text: "The Mets won their first World Series in 1969. Who did they beat?",
             possibilities: [
-                {
-                    answer: "Up to 20kg"
-                },
-                {
-                    answer: "Up to 115kg"
-                },
-                {
-                    answer: "Up to 220kg"
-                },
-                {
-                    answer: "Up to 500kg"
-                }
+                {  answer: "Detroit Tigers" },
+                {  answer: "Baltimore Orioles" },
+                {  answer: "Oakland Athletics"  },
+                {  answer: "Boston Red Sox"  }
             ],
             selected: null,
             correct: null
         },
         {
             type: "text",
-            text: "What is the typical lifespan of a Green Sea Turtle?",
+            text: "Only one pitcher in Mets history has won a Gold Glove Award. Who was it?",
             possibilities: [
-                {
-                    answer: "150 years"
-                },
-                {
-                    answer: "10 years"
-                },
-                {
-                    answer: "80 years"
-                },
-                {
-                    answer: "40 years"
-                }
+                {   answer: "Ron Darling" },
+                {   answer: "Tom Seaver"  },
+                {   answer: "Dwight Gooden"  },
+                {   answer: "Matt Harvey"  }
             ],
             selected: null,
             correct: null
         },
         {
-            type: "image",
-            text: "Which of these is the Alligator Snapping Turtle?",
+            type: "text",
+            text: "Who made the final out of the 1969 World Series?",
             possibilities: [
-                {
-                    answer: "https://c1.staticflickr.com/3/2182/2399413165_bcc8031cac_z.jpg?zz=1"
-                },
-                {
-                    answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg"
-                },
-                {
-                    answer: "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/8/13/1313246505515/Leatherback-turtle-007.jpg"
-                },
-                {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
-                }
+                {  answer: "Brooks Robinson" },
+                {  answer: "Boog Powell"     },
+                {  answer: "Davey Johnson"   },
+                {  answer: "Frank Robinson"  }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Who is the only Mets rookie pitcher to win a World Series game?",
+            possibilities: [
+                {  answer: "Gary Gentry" },
+                {  answer: "Jon Matlack" },
+                {  answer: "Roger McDowell" },
+                {  answer: "Dwight Gooden" }
+            ],
+            selected: null, 
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Who is the only Met to hit 3 home runs in a single World Series?",
+            possibilities: [
+                {  answer: "Gary Carter"  },
+                {  answer: "Don Clendenon" },
+                {  answer: "Mike Piazza" },
+                {  answer: "Rusty Staub"  }
             ],
             selected: null,
             correct: null
@@ -129,78 +129,94 @@
             type: "image",
             text: "Which of these is the Green Turtle?",
             possibilities: [
-                {
-                    answer: "http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg"
-                },
-                {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"
-                },
-                {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
-                },
-                {
-                    answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
-                }
+                {   answer: "http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg"                },
+                {    answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"                },
+                {  answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"                },
+                {   answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"   }
             ],
             selected: null,
             correct: null
         },
         {
             type: "text",
-            text: "Where does the Kemp's Ridley Sea Turtle live?'",
+            text: "With a salary of $2.8 million, this guy was the highest paid player on the 1986 Mets",
             possibilities: [
-                {
-                    answer: "Tropical waters all around the world"
-                },
-                {
-                    answer: "Eastern Australia"
-                },
-                {
-                    answer: "Coastal North Atlantic"
-                },
-                {
-                    answer: "South pacific islands"
-                }
+                { answer: "Gary Carter"  },
+                { answer: "Keith Hernandez" },
+                { answer: "George Foster" },
+                {  answer: "Darryl Strawberry" }
             ],
             selected: null,
             correct: null
         },
         {
             type: "text",
-            text: "What is the most common turtle in US waters?",
+            text: "This Met is one of just 4 pitchers in history to start a World Series opener after posting a losing regular-season record:",
             possibilities: [
-                {
-                    answer: "Loggerhead turtle"
-                },
-                {
-                    answer: "Leatherback turtle"
-                },
-                {
-                    answer: "Hawksbill Turtle"
-                },
-                {
-                    answer: "Alligator Snapping Turtle"
-                }
+                {   answer: "Al Leiter" },
+                {   answer: "Jon Matlack"   },
+                {   answer: "Ron Darling"  },
+                {   answer: "Rick Reed"   }
             ],
             selected: null,
             correct: null
         },
         {
             type: "text",
-            text: "What is the largest sea turtle on earth?",
+            text: "Which of these pitchers has NOT started a playoff game for both the Mets and Yankees?",
             possibilities: [
+                {   answer: "Kenny Rogers"                },
+                {   answer: "David Cone"                 },
+                {  answer: "Dwight Gooden"                 },
+                {  answer: "Al Leiter"                }
+            ],
+            selected: null,
+            correct: null
+        },
                 {
-                    answer: "Eastern Snake Necked Turtle"
-                },
-                {
-                    answer: "Olive Ridley Sea Turtle"
-                },
-                {
-                    answer: "Kemp's Ridley Sea Turtle'"
-                },
-                {
-                    answer: "Leatherback"
-                }
+            type: "text",
+            text: "How many numbers (excluding Jackie Robinson's) have the Mets retired?",
+            possibilities: [
+                {                    answer: "1"                },
+                {                    answer: "2"                 },
+                {                    answer: "3"                 },
+                {                    answer: "4"                 }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "In the 1973 A's-Mets World Series, who became the only player to pitch in all 7 games of the history of the Fall Classic?",
+            possibilities: [
+                {                    answer: "Rollie Fingers"                },
+                {                    answer: "Tug McGraw"                },
+                {                    answer: "Ray Sadecki"                },
+                {                    answer: "Darold Knowles"                 }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Besides both being lefthanders, what do Jerry Koosman and Jesse Orosco, the two pitchers who were on the Shea Stadium mound when the Mets won their two titles, have in common?",
+            possibilities: [
+                {      answer: "They both hail from Minnesota"                },
+                {      answer: "They both won Rookie of the Year"                },
+                {      answer: "They were both traded for each other in 1979"                 },
+                {     answer: "They are both in the Mets Hall of Fame"                }
+            ],
+            selected: null,
+            correct: null
+        },
+         {
+            type: "text",
+            text: "Before Jacob deGrom won it in 2014, who was the last Met to win the NL Rookie of the Year?",
+            possibilities: [
+                {                    answer: "Tom Seaver"                },
+                {                    answer: "Jon Matlack"                 },
+                {                    answer: "Darryl Strawberry"                 },
+                {                    answer: "Dwight Gooden"                 }
             ],
             selected: null,
             correct: null
@@ -209,65 +225,41 @@
             type: "image",
             text: "Which of these is the Olive Ridley Turtle?",
             possibilities: [
-                {
-                    answer: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg"
-                },
-                {
-                    answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
-                },
-                {
-                    answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg"
-                },
-                {
-                    answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"
-                }
+                {                    answer: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg"                },
+                {                    answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"                },
+                {                    answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg"                },
+                {                    answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"                }
             ],
             selected: null,
             correct: null
         },
         {
             type: "text",
-            text: "How Heavy can a leatherback turtle be?",
+            text: "Which 1969 Miracle Met earned another World Series ring as a coach on the 1986 Mets?",
             possibilities: [
-                {
-                    answer: "900kg"
-                },
-                {
-                    answer: "40kg"
-                },
-                {
-                    answer: "110kg"
-                },
-                {
-                    answer: "300kg"
-                }
+                {                    answer: "Don Cardwell"                },
+                {                    answer: "Ed Kranepool"                },
+                {                    answer: "Ron Swoboda"                },
+                {                    answer: "Bud Harrelson"                 }
             ],
             selected: null,
             correct: null
         },
         {
             type: "text",
-            text: "Which of these turtles are herbivores?",
+            text: "Who won the World Series MVP for the Mets in 1986?",
             possibilities: [
-                {
-                    answer: "Loggerhead Turtle"
-                },
-                {
-                    answer: "Hawksbill Turtle"
-                },
-                {
-                    answer: "Leatherback Turtle"
-                },
-                {
-                    answer: "Green Turtle"
-                }
+                {                    answer: "Ray Knight"                 },
+                {                    answer: "Gary Carter"                },
+                {                    answer: "Lenny Dykstra"                },
+                {                    answer: "Keith Hernandez"                }
             ],
             selected: null,
             correct: null
         }
     ];
 
-    var turtlesData = [
+    var playersData = [
         {
             type: "Green Turtle",
             image_url: "http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg",
