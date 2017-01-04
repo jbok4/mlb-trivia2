@@ -27,8 +27,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <!-- ng-src instead of src to allow correct functionality with angular -->
-                                <img ng-src="{{player.image_url}}" 
-                                    class="img-rounded img-responsive well-image">
+                                <img ng-src="{{player.image_url}}" class="img-rounded img-responsive well-image">
                             </div>
                             <div class="col-md-9">
                                 <!-- ng-src instead of src to allow correct functionality with angular -->
@@ -36,14 +35,14 @@
                                 <!-- more angular data binding -->
                                 <p><strong>Locations: </strong>{{ player.locations }}</p>
                                 <p><strong>Size: </strong>{{ player.size}}</p>
-                                <p><strong>Average Lifespan: </strong>{{ player.lifespan }}</p>
+                                <p><strong>MVP: </strong>{{ player.lifespan }}</p>
                                 <p>{{ player.description }}</p>
                                 <!-- ng-click is an angular directive to allow click events within angular -->
                                 <!-- data-toggle and data-target are bootstrap attributes to trigger the popup modal -->
                                 <button class="btn btn-primary pull-right"
                                     data-toggle="modal"
                                     data-target="#turtle-info"
-                                    ng-click="list.changeActiveTurtle(turtle)">Learn More</button>
+                                    ng-click="list.changeActiveTurtle(player)">Learn More</button>
                             </div>
                         </div><!-- row -->
 
