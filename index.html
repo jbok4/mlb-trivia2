@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="turtleFacts">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
             <h3>Think you know everything there is to know about this Amazin' Mets team? Take our Mets quiz and find out.</h3>
         </div>
     <!-- Hook on the controller for this view and specify when to show it using ng-hide -->
-        <div ng-controller="listCtrl as list">
+        <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive">
         <!-- search form -->
         <form class="form-inline well well-sm clearfix">
           <span class="glyphicon glyphicon-search"></span>
@@ -27,6 +27,10 @@
           placeholder="Search... "
           class="form-control"
           ng-model="list.search">
+          <button class="btn btn-warning pull-right"
+          ng-click="list.activateQuiz()">
+            <strong>Start Trivia</strong>
+          </button>
         </form>
         <!-- end search form -->
         <div class="row">
@@ -86,6 +90,10 @@
           </div><!-- modal-dialog -->
         </div><!-- modal -->
       </div><!-- controller listctrl -->
+
+      <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
+        <h3>Quiz Section</h3>
+      </div><!-- quizCtrl -->
     </div><!-- container -->
 
     <!-- third party js -->

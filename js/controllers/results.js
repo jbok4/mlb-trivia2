@@ -7,7 +7,7 @@
      * attaching results controller function to the turtleFacts module 
      */
     angular
-        .module("turtleFacts")
+        .module("app")
         .controller("resultsCtrl", ResultsController);
 
     /*

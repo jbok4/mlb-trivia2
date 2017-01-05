@@ -1,13 +1,7 @@
-/*
- * IIFE to keep code safe and outside the global namespace
- */
 (function(){
 
-    /*
-     * Declaring a factory service as part of the existing turtleFacts Module.
-     */
     angular
-        .module("turtleFacts")
+        .module("app")
         .factory("DataService", DataService);
 
     /*

@@ -10,6 +10,6 @@
      * empty array as the second argument)
      */
     angular
-        .module("turtleFacts", []);
+        .module("app", []);
 
 })();

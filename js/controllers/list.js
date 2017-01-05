@@ -1,6 +1,6 @@
 (function(){
     angular
-        .module("turtleFacts")
+        .module("app")
         .controller("listCtrl", ListController);
     
     /*
