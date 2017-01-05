@@ -120,18 +120,6 @@
             correct: null
         },
         {
-            type: "image",
-            text: "Which of these is the Green Turtle?",
-            possibilities: [
-                {   answer: "http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg"                },
-                {    answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"                },
-                {  answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"                },
-                {   answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"   }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
             type: "text",
             text: "With a salary of $2.8 million, this guy was the highest paid player on the 1986 Mets",
             possibilities: [
@@ -145,24 +133,12 @@
         },
         {
             type: "text",
-            text: "This Met is one of just 4 pitchers in history to start a World Series opener after posting a losing regular-season record:",
-            possibilities: [
-                {   answer: "Al Leiter" },
-                {   answer: "Jon Matlack"   },
-                {   answer: "Ron Darling"  },
-                {   answer: "Rick Reed"   }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
             text: "Which of these pitchers has NOT started a playoff game for both the Mets and Yankees?",
             possibilities: [
-                {   answer: "Kenny Rogers"                },
-                {   answer: "David Cone"                 },
-                {  answer: "Dwight Gooden"                 },
-                {  answer: "Al Leiter"                }
+                {   answer: "Kenny Rogers"   },
+                {   answer: "David Cone"     },
+                {  answer: "Dwight Gooden"   },
+                {  answer: "Al Leiter"       }
             ],
             selected: null,
             correct: null
@@ -175,18 +151,6 @@
                 {   answer: "2"    },
                 {   answer: "3"    },
                 {   answer: "4"    }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "In the 1973 A's-Mets World Series, who became the only player to pitch in all 7 games of the history of the Fall Classic?",
-            possibilities: [
-                {    answer: "Rollie Fingers"   },
-                {    answer: "Tug McGraw"        },
-                {    answer: "Ray Sadecki"       },
-                {    answer: "Darold Knowles"    }
             ],
             selected: null,
             correct: null

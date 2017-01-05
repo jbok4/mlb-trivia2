@@ -65,7 +65,7 @@
                  * is always referenced against the variable activeQuestion 
                  * which is 0 index. Therefore the length needs to be one less.
                  */
-                var quizLength = DataService.quizQuestions.length - 1;
+                var quizLength = DataService.triviaQuestions.length - 1;
 
                 /*
                  * This while loop will loop continuously until an unanswered 
@@ -89,7 +89,7 @@
 
                     // if current active question has not been selected, break 
                     // out the while loop
-                    if(DataService.quizQuestions[vm.activeQuestion].selected === null){
+                    if(DataService.triviaQuestions[vm.activeQuestion].selected === null){
                         breakOut = true;
                     }
                 }
@@ -122,28 +122,28 @@
          */
         function questionAnswered(){
             // set quizLength variable to keep code clean
-            var quizLength = DataService.quizQuestions.length;
+            var quizLength = DataService.triviaQuestions.length;
             
             numQuestionsAnswered = 0;
             //For loop added to loop through all questions and recount questions
             //that have been answered. This avoids infinite loops.
             for(var x = 0; x < quizLength; x++){
-                if(DataService.quizQuestions[vm.activeQuestion].selected !== null){
+                if(DataService.triviaQuestions[vm.activeQuestion].selected !== null){
                     numQuestionsAnswered++;
                     if(numQuestionsAnswered >= quizLength){
-                        // final check to ensure all questions are actuall answered
+                        // final check to ensure all questions are actually answered
                         for(var i = 0; i < quizLength; i++){
                             /*
                              * if find a question that is not answered, set it to 
                              * active question then return from this function 
                              * to ensure finalise flag is not set
                              */
-                            if(DataService.quizQuestions[i].selected === null){
+                            if(DataService.triviaQuestions[i].selected === null){
                                 setActiveQuestion(i);
                                 return;
                             }
                         }
-                        // set finalise flag and remove any existing warnings
+                        // set finalize flag and remove any existing warnings
                         vm.error = false;
                         vm.finalise = true;
                         return;
@@ -165,7 +165,7 @@
          * the current selection
          */
         function selectAnswer(index){
-            DataService.quizQuestions[vm.activeQuestion].selected = index;
+            DataService.triviaQuestions[vm.activeQuestion].selected = index;
         }
 
         /*

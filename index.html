@@ -100,10 +100,51 @@
               ng-repeat="question in quiz.dataService.triviaQuestions"
               ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}">
                 <span class="glyphicon"
-                ng-class="{'glyphican-star': question.selected !== null, 'glyphicon-star-empty': question.selected === null }"></span>
+                ng-class="{'glyphicon-star': question.selected !== null, 'glyphicon-star-empty': question.selected === null }"></span>
               </button>
             </div>
           </div>
+          <div class="col-xs-4">
+            <div class="row">
+              <h4>Legend:</h4>
+              <div class="col-sm-4">
+                <button class="btn btn-info">
+                  <span class="glyphicon glyphicon-star"></span>
+                </button>
+                <p>Answered</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="btn btn-danger">
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </button>
+                <p>Unanswered</p>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- trivia questions -->
+        <div class="row">
+          <h3>Question:</h3>
+          <div class="row well well-sm">
+            <div class="col-xs-12">
+              <h4>{{ quiz.activeQuestion+1 + ". " + quiz.dataService.triviaQuestions[quiz.activeQuestion].text }}</h4>
+              <div class="row" ng-if="quiz.dataService.triviaQuestions[quiz.activeQuestion].type === 'text'">
+                <div class="col-sm-6" ng-repeat="answer in quiz.dataService.triviaQuestions[quiz.activeQuestion].possibilities">
+                  <h4 class="answer">
+                    {{ answer.answer }}
+                  </h4>
+                </div>
+              </div>
+              <div class="row" ng-if="quiz.dataService.triviaQuestions[quiz.activeQuestion].type === 'image'">
+                <div class="col-sm-6" ng-repeat="answer in quiz.dataService.triviaQuestions[quiz.activeQuestion].possibilities">
+                  <div class="image-answer">
+                    <img ng-src="{{ answer.answer }}">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-warning" ng-click="quiz.questionAnswered()">Continue</button>
         </div>
       </div><!-- quizCtrl -->
     </div><!-- container -->
