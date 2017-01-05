@@ -265,8 +265,8 @@
             image_url: "https://images-na.ssl-images-amazon.com/images/I/71F-hwl5-oL._SY355_.jpg",
             locations: "Shea Stadium and Camden Yards",
             size: "Up to 1.5m and up to 300kg",
-            lifespan: "Over 80 years",
-            diet: "Herbivore",
+            lifespan: "Donn Clendenon",
+            diet: "World Champions",
             description: "The laughingstocks of baseball for much of the 1960s, the New York Mets perform a rapid and dramatic turnaround, capturing the hearts of fans everywhere with an eye-popping World Series performance against the Baltimore Orioles. Pitching was the undeniable strength of the 1969 Mets. Tom Seaver, appropriately earning his nickname 'Terrific Tom,' won his last ten decisions to finish at 25-7 with a 2.21 earned run average. Koosman won his last five to end the year at 17-9 and a 2.28 ERA. A sharp bullpen was anchored by Tug McGraw and Ron Taylor. Nolan Ryan, limited by groin problems, won six of nine decisions and struck out 92 batters in 89 innings."
         },
         {
@@ -275,7 +275,7 @@
             locations: "Shea Stadium and Fenway Park",
             size: "90cm, 115kg",
             lifespan: "Ray Knight",
-            diet: "Carnivore",
+            diet: "World Champions",
             description: "The 1986 World Series pitted the National League champions New York Mets against the American League champions Boston Red Sox. The Mets, coached by Bud Harrelson won the Series in the seventh game, after overcoming a nearly hopeless deficit in Game 6 — a game in which the Red Sox were twice one strike away from victory and that ended on a famous error by Boston's first baseman Bill Buckner after their lead had already been blown. Game 6 has been cited in the legend of the Curse of the Bambino to explain the major comeback. The Mets entered the World Series as big favorites, having won 108 games during the regular season."
         },
         {
@@ -283,9 +283,9 @@
             image_url: "http://mediadownloads.mlb.com/mlbam/2014/11/13/images/mlbf_36910429_th_45.jpg",
             locations: "National League",
             size: "Up to 2m, up to 900kg",
-            lifespan: "45 years",
-            diet: "Carnivore",
-            description: "The Baseball Writers Association of America honors the outstanding rookie player in each league with the Rookie of the Year Award. The four Mets rookies who have won the award are Tom Seaver in 1967, Jon Matlack in 1972, Darryl Strawberry in 1983, and Dwight Gooden in 1984."
+            lifespan: "Jacob Degrom 2014",
+            diet: "Rookie of the Year, NL",
+            description: "The Baseball Writers Association of America honors the outstanding rookie player in each league with the Rookie of the Year Award. The four previous Mets rookies who have won the award are Tom Seaver in 1967, Jon Matlack in 1972, Darryl Strawberry in 1983, and Dwight Gooden in 1984."
         },
         {
             type: "Hawksbill Sea Turtle",

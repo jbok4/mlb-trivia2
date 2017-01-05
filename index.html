@@ -34,25 +34,50 @@
                                 <h4>{{ player.type }}</h4>
                                 <!-- more angular data binding -->
                                 <p><strong>Locations: </strong>{{ player.locations }}</p>
-                                <p><strong>Size: </strong>{{ player.size}}</p>
+                                <!-- <p><strong>Size: </strong>{{ player.size}}</p> -->
                                 <p><strong>MVP: </strong>{{ player.lifespan }}</p>
                                 <p>{{ player.description }}</p>
                                 <!-- ng-click is an angular directive to allow click events within angular -->
                                 <!-- data-toggle and data-target are bootstrap attributes to trigger the popup modal -->
                                 <button class="btn btn-primary pull-right"
                                     data-toggle="modal"
-                                    data-target="#turtle-info"
-                                    ng-click="list.changeActiveTurtle(player)">Learn More</button>
+                                    data-target="#player-info"
+                                    ng-click="list.changeActivePlayer(player)">Learn More</button>
                             </div>
                         </div><!-- row -->
-
+                    </div><!-- well -->
+          </div><!-- col sm 12 -->
+        </div><!-- row -->
+        <div class="modal" id="player-info">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>{{ list.activePlayer.type }}</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-xs-8 col-xs-offset-2">
+                    <img ng-src="{{ list.activePlayer.image_url }}" class="ng-rounded img-responsive">
+                  </div>
                 </div>
-
-            </div>
-            </div>
-            </div>
-
-    </div>
+                <div class="row top-buffer">
+                  <div class="col-xs-12">
+                    <p><strong>Location: </strong>{{ list.activePlayer.locations }}</p>
+                    <p><strong>Size: </strong>{{ list.activePlayer.size }}</p>
+                    <p><strong>MVP: </strong>{{ list.activePlayer.lifespan }}</p>
+                    <p><strong>Award: </strong>{{ list.activePlayer.diet }}</p>
+                  </div>
+                  <div class="col-xs-12 top-buffer">
+                    <p>{{ list.activePlayer.description }}</p>
+                    <button class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- modal-content -->
+          </div><!-- modal-dialog -->
+        </div><!-- modal -->
+      </div><!-- controller listctrl -->
+    </div><!-- container -->
 
     <!-- third party js -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>

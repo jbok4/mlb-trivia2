@@ -30,15 +30,15 @@
          */
         vm.quizMetrics = quizMetrics; // Controllers reference to the quiz data from factory
         vm.data = DataService.playersData; // Controller reference to the turtle info created in the factory
-        vm.activeTurtle = {}; // will be used in the view to hold the data of currently active turtle
-        vm.changeActiveTurtle = changeActiveTurtle; // reference to a named function below
+        vm.activePlayer = {}; // will be used in the view to hold the data of currently active turtle
+        vm.changeActivePlayer = changeActivePlayer; // reference to a named function below
         vm.activateQuiz = activateQuiz; // reference to named function below
         vm.search = ""; // will hold the search query when user uses search bar in view
 
-        function changeActiveTurtle(index){
-            // simple function to attach the data of the turtle clicked on to 
-            // the active turtle object
-            vm.activeTurtle = index;
+        function changeActivePlayer(index){
+            // simple function to attach the data of the player clicked on to 
+            // the active player object
+            vm.activePlayer = index;
         }
 
         function activateQuiz(){
