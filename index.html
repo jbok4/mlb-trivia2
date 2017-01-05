@@ -92,7 +92,19 @@
       </div><!-- controller listctrl -->
 
       <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
-        <h3>Quiz Section</h3>
+        <div class="row">
+          <div class="col-xs-8">
+            <h4>Progress:</h4>
+            <div class="btn-toolbar">
+              <button class="btn" 
+              ng-repeat="question in quiz.dataService.triviaQuestions"
+              ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}">
+                <span class="glyphicon"
+                ng-class="{'glyphican-star': question.selected !== null, 'glyphicon-star-empty': question.selected === null }"></span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div><!-- quizCtrl -->
     </div><!-- container -->
 

@@ -171,10 +171,10 @@
             type: "text",
             text: "How many numbers (excluding Jackie Robinson's) have the Mets retired?",
             possibilities: [
-                {                    answer: "1"                },
-                {                    answer: "2"                 },
-                {                    answer: "3"                 },
-                {                    answer: "4"                 }
+                {   answer: "1"    },
+                {   answer: "2"    },
+                {   answer: "3"    },
+                {   answer: "4"    }
             ],
             selected: null,
             correct: null
@@ -183,10 +183,10 @@
             type: "text",
             text: "In the 1973 A's-Mets World Series, who became the only player to pitch in all 7 games of the history of the Fall Classic?",
             possibilities: [
-                {                    answer: "Rollie Fingers"                },
-                {                    answer: "Tug McGraw"                },
-                {                    answer: "Ray Sadecki"                },
-                {                    answer: "Darold Knowles"                 }
+                {    answer: "Rollie Fingers"   },
+                {    answer: "Tug McGraw"        },
+                {    answer: "Ray Sadecki"       },
+                {    answer: "Darold Knowles"    }
             ],
             selected: null,
             correct: null
@@ -195,10 +195,10 @@
             type: "text",
             text: "Besides both being lefthanders, what do Jerry Koosman and Jesse Orosco, the two pitchers who were on the Shea Stadium mound when the Mets won their two titles, have in common?",
             possibilities: [
-                {      answer: "They both hail from Minnesota"                },
-                {      answer: "They both won Rookie of the Year"                },
-                {      answer: "They were both traded for each other in 1979"                 },
-                {     answer: "They are both in the Mets Hall of Fame"                }
+                {   answer: "They both hail from Minnesota"            },
+                {   answer: "They both won Rookie of the Year"          },
+                {   answer: "They were both traded for each other in 1979"       },
+                {   answer: "They are both in the Mets Hall of Fame"      }
             ],
             selected: null,
             correct: null
@@ -231,10 +231,10 @@
             type: "text",
             text: "Which 1969 Miracle Met earned another World Series ring as a coach on the 1986 Mets?",
             possibilities: [
-                {                    answer: "Don Cardwell"                },
-                {                    answer: "Ed Kranepool"                },
-                {                    answer: "Ron Swoboda"                },
-                {                    answer: "Bud Harrelson"                 }
+                {      answer: "Don Cardwell"         },
+                {      answer: "Ed Kranepool"         },
+                {      answer: "Ron Swoboda"          },
+                {      answer: "Bud Harrelson"        }
             ],
             selected: null,
             correct: null
@@ -243,10 +243,10 @@
             type: "text",
             text: "Who won the World Series MVP for the Mets in 1986?",
             possibilities: [
-                {                    answer: "Ray Knight"                 },
-                {                    answer: "Gary Carter"                },
-                {                    answer: "Lenny Dykstra"                },
-                {                    answer: "Keith Hernandez"                }
+                {       answer: "Ray Knight"    },
+                {       answer: "Gary Carter"   },
+                {       answer: "Lenny Dykstra" },
+                {       answer: "Keith Hernandez" }
             ],
             selected: null,
             correct: null
