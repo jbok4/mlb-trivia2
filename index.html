@@ -20,6 +20,15 @@
         </div>
     <!-- Hook on the controller for this view and specify when to show it using ng-hide -->
         <div ng-controller="listCtrl as list">
+        <!-- search form -->
+        <form class="form-inline well well-sm clearfix">
+          <span class="glyphicon glyphicon-search"></span>
+          <input type="text" 
+          placeholder="Search... "
+          class="form-control"
+          ng-model="list.search">
+        </form>
+        <!-- end search form -->
         <div class="row">
                 <div class="col-sm-12" ng-repeat="player in list.data | filter:list.search">
                     <!-- using a bootstrap well to style -->
