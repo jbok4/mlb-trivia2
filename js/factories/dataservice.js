@@ -56,7 +56,7 @@
      *
      */
 
-    var correctAnswers = [3, 1, 2, 0, 2, 0, 3, 2, 0, 3];
+    var correctAnswers = [3, 0, 1, 0, 2, 0, 3, 2, 0, 3, 0];
 
     var triviaQuestions  = [
          {

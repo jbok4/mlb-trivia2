@@ -57,12 +57,12 @@
              */
             function markQuiz(){
                 quizObj.correctAnswers = DataService.correctAnswers;
-                for(var i = 0; i < DataService.quizQuestions.length; i++){
-                    if(DataService.quizQuestions[i].selected === DataService.correctAnswers[i]){
-                        DataService.quizQuestions[i].correct = true;
+                for(var i = 0; i < DataService.triviaQuestions.length; i++){
+                    if(DataService.triviaQuestions[i].selected === DataService.correctAnswers[i]){
+                        DataService.triviaQuestions[i].correct = true;
                         quizObj.numCorrect++;
                     }else{
-                        DataService.quizQuestions[i].correct = false;
+                        DataService.triviaQuestions[i].correct = false;
                     }
                 }
             }

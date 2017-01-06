@@ -51,7 +51,7 @@
             /*
              * simply calculating the percentage of correct answers and returning the number
              */
-            return quizMetrics.numCorrect / DataService.quizQuestions.length * 100;
+            return quizMetrics.numCorrect / DataService.triviaQuestions.length * 100;
         }
 
         function setActiveQuestion(index){
@@ -73,7 +73,7 @@
              */
             if(index === quizMetrics.correctAnswers[vm.activeQuestion]){
                 return "bg-success";
-            }else if(index === DataService.quizQuestions[vm.activeQuestion].selected){
+            }else if(index === DataService.triviaQuestions[vm.activeQuestion].selected){
                 return "bg-danger";
             }
         }
@@ -90,8 +90,8 @@
             quizMetrics.changeState("results", false);
             quizMetrics.numCorrect = 0;
 
-            for(var i = 0; i < DataService.quizQuestions.length; i++){
-                var data = DataService.quizQuestions[i]; //binding the current question to data to keep code clean
+            for(var i = 0; i < DataService.triviaQuestions.length; i++){
+                var data = DataService.triviaQuestions[i]; //binding the current question to data to keep code clean
 
                 data.selected = null;
                 data.correct = null;
