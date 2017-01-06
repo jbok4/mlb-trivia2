@@ -15,14 +15,14 @@
 }
 .image-answer{
     cursor: pointer;
-    height: 300px;
+    height: 260px;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 .image-answer img{
-    width: 40%;
+    width: 100%;
     height: auto;
 }
 .image-selected{

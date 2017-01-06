@@ -56,10 +56,10 @@
      *
      */
 
-    var correctAnswers = [3, 0, 1, 0, 2, 0, 3, 2, 0, 3, 0];
+    var correctAnswers = [1, 0, 2, 1, 0, 2, 3, 3, 2, 3, 3, 3, 0];
 
     var triviaQuestions  = [
-         {
+         { 
             type: "text",
             text: "The Mets won their first World Series in 1969. Who did they beat?",
             possibilities: [
@@ -169,7 +169,7 @@
         },
          {
             type: "text",
-            text: "Before Jacob deGrom won it in 2014, who was the last Met to win the NL Rookie of the Year?",
+            text: "Before Jacob deGrom won it in 2014, who was the last Met pitcher to win the NL Rookie of the Year?",
             possibilities: [
                 {    answer: "Tom Seaver"          },
                 {    answer: "Jon Matlack"          },
@@ -183,10 +183,10 @@
             type: "image",
             text: "Which of these pitchers never pitched a no-hitter?",
             possibilities: [
-                {   answer: "https://shlabotnikreport.files.wordpress.com/2013/12/1986-topps-box-cards-dwight-gooden.jpg"                },
-                {   answer: "http://my.execpc.com/~pjsports/CONE/89AS9.jpg"                },
-                {   answer: "http://ep.yimg.com/ay/tbcs/2013-topps-factory-set-orange-johan-santana-baseball-card-2.gif"                },
-                {   answer: "http://www.tradingcarddb.com/Images/Cards/Baseball/107/107-77Fr.jpg"                }
+                {   answer: "https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/1734987/0677623001471873442_filepicker.jpg"     },
+                {   answer: "http://milwaukee.locals.baseballprospectus.com/wp-content/uploads/sites/6/2015/08/USATSI_6240442_168381517_lowres-e1439170503232.jpg"      },
+                {   answer: "http://www.desivalley.com/wp-content/uploads/2011/08/Johan-Santana-Wallpaper.jpg"    },
+                {   answer: "http://mlb.mlb.com/images/2009/09/10/ihPUMcZm.jpg"                }
             ],
             selected: null,
             correct: null
@@ -246,50 +246,15 @@
             description: "The Baseball Writers Association of America honors the outstanding rookie player in each league with the Rookie of the Year Award. The four previous Mets rookies who have won the award are Tom Seaver in 1967, Jon Matlack in 1972, Darryl Strawberry in 1983, and Dwight Gooden in 1984."
         },
         {
-            type: "Hawksbill Sea Turtle",
-            image_url: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532",
-            locations: "Tropical Coastal areas around the world",
+            type: "Dwight 'Doc' Gooden",
+            image_url: "https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/1734987/0677623001471873442_filepicker.jpg",
+            locations: "Shea Stadium",
             size: "Over 1m, 45-68kg",
-            lifespan: "30-50 Years",
-            diet: "Carnivore",
-            description: "Dolor possimus voluptas hic aliquam rem doloremque minus maiores accusantium? Laborum perferendis harum blanditiis quod quia? Aspernatur sunt et fuga delectus ab rem excepturi. Ipsa quibusdam facere consequuntur magnam vitae? Consectetur consectetur necessitatibus beatae delectus quibusdam in! Est nobis omnis iusto illum fugiat maxime! Neque fugiat reiciendis sequi corrupti minima facere distinctio aliquam est voluptatibus. Sint incidunt soluta atque ducimus."
-        },
-        {
-            type: "Alligator Snapping Turtle",
-            image_url: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg",
-            locations: "Along the Atlantic Coast of USA",
-            size: "around 60cm, up to 100kg",
-            lifespan: "20-70 years",
-            diet: "Carnivore",
-            description: "The prehistoric-looking alligator snapping turtle is the largest freshwater turtle in North America and among the largest in the world. With its spiked shell, beaklike jaws, and thick, scaled tail, this species is often referred to as the 'dinosaur of the turtle world.' Found almost exclusively in the rivers, canals, and lakes of the southeastern United States, alligator snappers can live to be 50 to 100 years old. Males average 26 inches (66 centimeters) in shell length and weigh about 175 pounds (80 kilograms), although they have been known to exceed 220 pounds (100 kilograms). The much smaller females top out at around 50 pounds (23 kilograms)."
-        },
-        {
-            type: "Kemp's Ridley Sea Turtle",
-            image_url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG",
-            locations: "Coastal areas of the North Atlantic",
-            size: "65cm, up to 45kg",
-            lifespan: "Around 50 years",
-            diet: "Omnivore",
-            description: "The Kemp’s ridley turtle is the world’s most endangered sea turtle, and with a worldwide female nesting population roughly estimated at just 1,000 individuals, its survival truly hangs in the balance. Their perilous situation is attributed primarily to the over-harvesting of their eggs during the last century. And though their nesting grounds are protected and many commercial fishing fleets now use turtle excluder devices in their nets, these turtles have not been able to rebound. For this reason, their nesting processions, called arribadas, make for especially high drama. During an arribada, females take over entire portions of beaches, lugging their big bodies through the sand with their flippers until they find a satisfying spot to lay their eggs. Even more riveting is the later struggle to the ocean of each tiny, vulnerable hatchling. Beset by predators, hatchlings make this journey at night, breaking out of their shells using their caruncle, a single temporary tooth grown just for this purpose."
-        },
-        {
-            type: "Olive Ridley Turtle",
-            image_url: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg",
-            locations: "Tropical coastal areas around the world",
-            size: "70cm, 45kg",
-            lifespan: "50 years",
-            diet: "Omnivore",
-            description: "The olive ridley turtle is named for the generally greenish color of its skin and shell, or carapace. It is closely related to the Kemp’s ridley, with the primary distinction being that olive ridleys are found only in warmer waters, including the southern Atlantic, Pacific and Indian Oceans. Olive and Kemp’s ridleys are the smallest of the sea turtles, weighing up to 100 pounds (45 kilograms) and reaching only about 2 feet (65 centimeters) in shell length. The olive ridley has a slightly smaller head and smaller shell than the Kemp’s."
-        },
-        {
-            type: "Eastern Snake Necked Turtle",
-            image_url: "https://c1.staticflickr.com/3/2182/2399413165_bcc8031cac_z.jpg?zz=1",
-            locations: "Eastern Australia",
-            size: "Up to 30cm",
-            lifespan: "25 years",
-            diet: "Carnivore",
-            description: "Snake-necked turtles, as the name suggests, have an unusually long neck. Their necks may be up to 60 percent of their carapace length. Their carapace is oval and flattened, usually dark-brown to black measuring up to 11 inches (27.5 cm) in length. Scutes are shed as the animals grow. The males have a longer, thicker tail than females and a concave plastron. They are excellent swimmers; they have large, webbed feet with sharp claws used to tear apart food."
+            lifespan: "1986 World Series",
+            diet: "Cy Young, Rookie of the Year, 4 Time All-Star, Triple Crown",
+            description: "Gooden made his MLB debut in 1984 for the Mets and quickly established himself as one of the league's most talented pitchers; as a 19-year-old rookie, he earned the first of four All-Star selections, won the National League (NL) Rookie of the Year Award, and led the league in strikeouts. In 1985, he won the NL Cy Young Award and achieved the pitching Triple Crown, compiling a 24–4 record and a league-leading 1.53 ERA, 268 strikeouts, and 16 complete games. The following season, he helped the Mets win the 1986 World Series. Gooden remained an effective pitcher in subsequent years, but his career was ultimately derailed by cocaine and alcohol addiction. After posting a losing record in each season from 1992–1994, Gooden was suspended for the 1995 season after a positive drug test while serving a prior suspension. As a member of the Yankees in 1996, Gooden pitched a no-hitter and helped the team on its path to a World Series championship. He pitched four additional years for as many teams, but never approached the success of his peak years with his Mets. In 2010, Gooden was inducted into the New York Mets Hall of Fame."
         }
+        
     ];
 
 })();
